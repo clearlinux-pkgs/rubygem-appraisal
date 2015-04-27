@@ -1,0 +1,26 @@
+From e7acf0619168311120d9f7446c3c1fc45c36b0f0 Mon Sep 17 00:00:00 2001
+From: Athenas Jimenez <athenas.jimenez.gonzalez@intel.com>
+Date: Thu, 9 Jul 2015 15:10:19 +0000
+Subject: [PATCH] Fix thor version
+
+Signed-off-by: Athenas Jimenez <athenas.jimenez.gonzalez@intel.com>
+---
+ Gemfile | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/Gemfile b/Gemfile
+index afb4a24..6697cb8 100644
+--- a/Gemfile
++++ b/Gemfile
+@@ -3,7 +3,7 @@ source 'https://rubygems.org'
+ gemspec
+ 
+ # This here to make sure appraisal works with Rails 3.0.0.
+-gem 'thor', '~> 0.14.0'
++gem 'thor', '>= 0.14.0'
+ 
+ if RUBY_VERSION < "1.9"
+   gem "i18n", "~> 0.6.0"
+-- 
+2.4.2
+
