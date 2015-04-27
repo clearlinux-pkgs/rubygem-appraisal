@@ -1,0 +1,5 @@
+# rubygem-shoulda requires version (~> 0.4.0) //old package
+# check: https://rubygems.org/gems/shoulda/versions/3.5.0
+# rubygem-rspec-spies requires version (>= 0)
+# check: https://rubygems.org/gems/rspec-spies/versions/2.1.4
+watchurl=https://rubygems.org/gems/appraisal/versions/([\d\.]*)
