@@ -4,7 +4,7 @@
 #
 Name     : rubygem-appraisal
 Version  : 2.1.0
-Release  : 13
+Release  : 14
 URL      : https://rubygems.org/downloads/appraisal-2.1.0.gem
 Source0  : https://rubygems.org/downloads/appraisal-2.1.0.gem
 Summary  : No detailed summary available
