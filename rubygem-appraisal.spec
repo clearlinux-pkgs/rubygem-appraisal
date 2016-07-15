@@ -4,7 +4,7 @@
 #
 Name     : rubygem-appraisal
 Version  : 2.1.0
-Release  : 14
+Release  : 15
 URL      : https://rubygems.org/downloads/appraisal-2.1.0.gem
 Source0  : https://rubygems.org/downloads/appraisal-2.1.0.gem
 Summary  : No detailed summary available
@@ -18,6 +18,7 @@ BuildRequires : rubygem-bundler
 BuildRequires : rubygem-devise
 BuildRequires : rubygem-diff-lcs
 BuildRequires : rubygem-i18n
+BuildRequires : rubygem-minitest
 BuildRequires : rubygem-rake
 BuildRequires : rubygem-rdoc
 BuildRequires : rubygem-rspec
@@ -27,6 +28,8 @@ BuildRequires : rubygem-rspec-mocks
 BuildRequires : rubygem-rspec-support
 BuildRequires : rubygem-rubygems-tasks
 BuildRequires : rubygem-thor
+BuildRequires : rubygem-tzinfo
+Patch1: 0001-Fix-thor-version.patch
 
 %description
 Appraisal
@@ -46,6 +49,7 @@ bin components for the rubygem-appraisal package.
 gem unpack %{SOURCE0}
 %setup -q -D -T -n appraisal-2.1.0
 gem spec %{SOURCE0} -l --ruby > rubygem-appraisal.gemspec
+%patch1 -p1
 
 %build
 export LANG=C

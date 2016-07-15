@@ -2,3 +2,6 @@
 # picked up automatically. One name per line, no whitespace.
 rubygem-i18n
 rubygem-appraisal
+rubygem-tzinfo
+rubygem-minitest
+rubygem-thor
